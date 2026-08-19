@@ -65,7 +65,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T13:58:52.092Z  
+**Submitted:** 2026-08-19T14:00:27.165Z  
 
 ```java
 class Solution {
