@@ -29,7 +29,7 @@ Explanation: The array does not follow the required pattern of strictly increasi
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-20T15:22:54.902Z  
+**Submitted:** 2026-08-20T15:28:01.431Z  
 
 ```java
 class Solution {
