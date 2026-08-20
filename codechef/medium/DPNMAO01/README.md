@@ -61,7 +61,7 @@ No element in the array has an absolute difference of $10$ or less with the numb
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-20T15:33:29.328Z  
+**Submitted:** 2026-08-20T15:33:56.947Z  
 
 ```java
 import java.util.*;
