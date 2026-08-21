@@ -1,23 +1,29 @@
-import java.util.*;
-import java.lang.*;
-import java.io.*;
+import java.util.Scanner;
 
-class Codechef
-{
-	public static void main (String[] args) throws java.lang.Exception
-	{
-		Scanner sc=new Scanner(System.in);
-		int n=sc.nextInt();
-		int[] prefix=new int[n];
-		prefix[0]=sc.nextInt();
-		for(int i=1;i<n;i++){
-		    int x=sc.nextInt();
-		    prefix[i]=prefix[i-1]+x;
-		    
-		}
-		for(int i=0;i<n;i++){
-		    System.out.println(prefix[i]+" ");
-		}
-
-	}
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        // your code goes here
+        int len = scanner.nextInt();
+        int[] arr = new int[len];
+        for (int i = 0; i < len; i++) {
+            int num = scanner.nextInt();
+            arr[i] = num;
+        }
+        
+        int[] pre = new int[len];
+        for (int i = 0; i < len; i++) {
+            if (i != 0) {
+                pre[i] += pre[i - 1];
+            }
+            pre[i] += arr[i];
+        }
+        
+        for (int e : pre) {
+            System.out.print(e + " ");
+        }
+        System.out.println();
+        
+        scanner.close();
+    }
 }
