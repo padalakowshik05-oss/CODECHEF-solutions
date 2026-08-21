@@ -40,8 +40,8 @@ Since there are two elements with the value 3, in total there are 2 elements hav
 
 **Language:** Java  
 **Runtime:** 1 ms (beats 54.71%)  
-**Memory:** 43.1 MB (beats 96.61%)  
-**Submitted:** 2026-08-21T09:09:03.181Z  
+**Memory:** 42.9 MB (beats 99.68%)  
+**Submitted:** 2026-08-21T09:10:51.583Z  
 
 ```java
 class Solution {
