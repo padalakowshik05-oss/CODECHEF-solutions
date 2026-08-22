@@ -4,15 +4,38 @@
 
 ## Problem
 
-### Logical Error in Calculating Average
+### Incorrect Index
 
-Here in the prepopulated code we have logical error. Try to solve the logical error.
+Strings in Java have zero-based indexing.
+This means that the first index is 0.
+It is easy to forget that and use one-based indexing instead.
+This incorrect indexing leads to another logical error.
 
-Consider the formula for calculating the average:
+ **Program to print the last character of the string** 
 
 ```
-Average = (num1 + num2 + num3) / 3
+Scanner scanner = new Scanner(System.in);
+String s = scanner.nextLine();    // input string
+int n = s.length();               // find length of string
+        
+System.out.println(s.charAt(n - 1));   // Correct way to access the n-th character
+System.out.println(s.charAt(n));       // incorrect way
 
+```
+
+### Task
+- Given a program to print 1st, 4th and 6th character of a string
+- Find out the logical error and solve it
+### Sample 1:
+Input
+Output
+
+```
+hellohowudoing
+```
+
+```
+hlh
 ```
 
 ## Solution
@@ -20,15 +43,16 @@ Average = (num1 + num2 + num3) / 3
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-22T18:08:05.298Z  
+**Submitted:** 2026-08-22T18:08:24.645Z  
 
 ```java
+import java.util.Scanner;
+
 class CodeChef {
     public static void main(String[] args) {
-        int num1 = 10, num2 = 20, num3 = 30;
-        double average = (num1 + num2 + num3) / 3;  // Logical error: Wrong precedence
-
-        System.out.println("The calculated average is: " + average); // it will print 40.0, which is wrong
+        Scanner scanner = new Scanner(System.in);
+        String s = scanner.nextLine();
+        System.out.println("" + s.charAt(0) + s.charAt(2) + s.charAt(5));
     }
 }
 ```
