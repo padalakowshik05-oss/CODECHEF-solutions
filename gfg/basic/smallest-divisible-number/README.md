@@ -28,7 +28,7 @@ Explanation: 60 is the smallest number divisible by all from 1 to 6.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-31T09:34:05.322Z  
+**Submitted:** 2026-08-31T09:41:41.607Z  
 
 ```java
 class Solution {
