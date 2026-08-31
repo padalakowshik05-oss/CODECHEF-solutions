@@ -29,7 +29,7 @@ Explanation: 52 = 25 and second digit from right is 2.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-31T08:58:03.742Z  
+**Submitted:** 2026-08-31T08:57:30.300Z  
 
 ```java
 class Solution {
