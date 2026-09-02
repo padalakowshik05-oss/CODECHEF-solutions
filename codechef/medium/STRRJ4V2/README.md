@@ -4,26 +4,44 @@
 
 ## Problem
 
-_Description not available._
+### String length
+
+Listen
+
+We can use the  **`length()`**  function to get the length of a `string`.
+For eg.
+
+```
+String s = "hello";
+int len = s.length();
+System.out.println(len);
+
+// Output
+// 5
+
+```
+
+### Task
+
+Write a program which does the following:
+
+- Create a variable txt and assign it the text "NumeroTres".
+- Use the length() function to output to the console the number of characters in txt.
 
 ## Solution
 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T17:37:32.245Z  
+**Submitted:** 2026-09-02T17:38:10.773Z  
 
 ```java
-//We need to output 2569 using string concatenation.
-//The code below is incorrect - Debug the code to solve the problem
 class Codechef
 {
 	public static void main (String[] args)
 	{
-		// your code goes here
-		String num1 = "25";
-        String num2 = "69";
-        System.out.print(num1 +num2);
+        String txt = "NumeroTres";
+        System.out.println("The length of the word is: " + txt.length());
 	}
 }
 ```
