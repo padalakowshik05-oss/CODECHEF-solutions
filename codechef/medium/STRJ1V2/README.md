@@ -29,7 +29,7 @@ Write a program which does the following:
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T17:34:59.608Z  
+**Submitted:** 2026-09-02T17:36:22.945Z  
 
 ```java
 class Codechef
