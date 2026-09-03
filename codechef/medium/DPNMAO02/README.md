@@ -49,7 +49,7 @@ false
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-03T15:37:43.027Z  
+**Submitted:** 2026-09-03T15:38:22.350Z  
 
 ```java
 import java.util.*;
@@ -65,6 +65,7 @@ class Codechef
 		String t=sc.next();
 		if(s.length()!=t.length()){
 		    System.out.println("false");
+		    return;
 		}
 		HashMap<Character,Integer> map=new HashMap<>();
 		for(int i=0;i<s.length();i++){
