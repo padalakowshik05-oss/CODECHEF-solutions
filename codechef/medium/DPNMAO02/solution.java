@@ -11,6 +11,7 @@ class Codechef
 		String t=sc.next();
 		if(s.length()!=t.length()){
 		    System.out.println("false");
+		    return;
 		}
 		HashMap<Character,Integer> map=new HashMap<>();
 		for(int i=0;i<s.length();i++){
