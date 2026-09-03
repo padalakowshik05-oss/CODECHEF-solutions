@@ -4,59 +4,52 @@
 
 ## Problem
 
-### Create a replica string
+### Binary strings
 
-Let's begin with a problem which covers our knowledge of 'String' syntax.
+Let us solve a problem on binary strings
+You are given 2 separate binary strings - $A$ and $B$ - both of equal length.
+You need to output the following
 
-You are given a string $S$ consisting of only  **lowercase**  english characters.
-You need to generate 2 separate strings $A$ and $B$
-
-- String $A$ needs to be an exact replica of string $S$ - it has to be created by starting with an empty string
-- String $B$ is reverse of string $S$.
+- Count of '1's in each string
+- Count of indices ($i$) where $A[i] = B[i]$
 ### Input Format
 - The first line will contain $t$ - the number of test cases. Then the test cases follow
-- Each line of the test case consists of a single line of input - the string $S$
+- Each test case consists of two lines of input the string $A$ on the $1^{st}$ line and the string $B$ on the $2^{nd}$ line
 ### Output Format
-- Each test case will contain 2 lines of output Line 1: Output string $A$ Line 2: Output string $B$
+- Each test case should contain 1 line of output, with three space separated integers Count of $'1'$s in string $A$ Count of $'1'$s in string $B$ Count of indices $i$ where $A[i] = B[i]$
 ### Sample 1:
 Input
 Output
 
 ```
-3
-abcde
-aaaaa
-aaaab
-
+2
+10001
+10000
+10101
+00110
 ```
 
 ```
-abcde
-edcba
-aaaaa
-aaaaa
-aaaab
-baaaa
+2 1 4
+3 2 2
 ```
 
 ### Explanation:
 
- **Test case 1** : $S$ is $abcde$
+ **Test case 1** : The number of '1's in $A$ is 2.
+The number of '1's in $B$ is 1.
+For 4 indices - A[i] = B[i].
 
-- $A$ becomes $abcde$
-- $B$ becomes $edcba$
-
- **Test case 3** : $S$ is $aaaab$
-
-- $A$ becomes $aaaab$
-- $B$ becomes $baaaa$
+ **Test case 1** : The number of '1's in $A$ is 3.
+The number of '1's in $B$ is 2.
+For 2 indices - A[i] = B[i].
 
 ## Solution
 
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-03T16:11:50.545Z  
+**Submitted:** 2026-09-03T16:12:09.371Z  
 
 ```c_cpp
 //Solution as follows
@@ -67,30 +60,29 @@ int main() {
     int t;
     scanf("%d", &t);
     while (t--) {
-        char S[100], A[100], B[100];
-        scanf("%s", S);
+        char A[101], B[101];
+        scanf("%s%s", A, B);
 
-        // loop through every character of S and add to A
-        for (int i = 0; i < strlen(S); i++) {
-            A[i] = S[i];
-        }
-        A[strlen(S)] = '\0';
-
-        // loop through every character of S and add to B
-        for (int i = strlen(S) - 1, j = 0; i >= 0; i--, j++) {
-            B[j] = S[i];
-        }
-        B[strlen(S)] = '\0';
-
-        // print A and B
+        int a_count = 0, b_count = 0, common = 0;
         for (int i = 0; i < strlen(A); i++) {
-            printf("%c", A[i]);
+            if (A[i] == '1') {
+                a_count++;
+            }
         }
-        printf("\n");
+
         for (int i = 0; i < strlen(B); i++) {
-            printf("%c", B[i]);
+            if (B[i] == '1') {
+                b_count++;
+            }
         }
-        printf("\n");
+
+        for (int i = 0; i < strlen(A); i++) {
+            if (A[i] == B[i]) {
+                common++;
+            }
+        }
+
+        printf("%d %d %d\n", a_count, b_count, common);
     }
     return 0;
 }
