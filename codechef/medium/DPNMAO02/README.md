@@ -49,7 +49,7 @@ false
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-03T15:38:22.350Z  
+**Submitted:** 2026-09-03T15:38:38.043Z  
 
 ```java
 import java.util.*;
@@ -78,7 +78,7 @@ class Codechef
 		for(int count:map.values()){
 		    if(count!=0){
 		        System.out.println("false");
-		        break;
+		        return;
 		    }
 		}
 		System.out.println("true");
