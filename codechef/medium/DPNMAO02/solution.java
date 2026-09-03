@@ -24,7 +24,7 @@ class Codechef
 		for(int count:map.values()){
 		    if(count!=0){
 		        System.out.println("false");
-		        break;
+		        return;
 		    }
 		}
 		System.out.println("true");
