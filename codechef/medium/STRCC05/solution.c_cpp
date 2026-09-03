@@ -2,33 +2,35 @@
 #include <stdio.h>
 #include <string.h>
 
-int main() {
+int main()
+{
     int t;
     scanf("%d", &t);
-    while (t--) {
-        char A[101], B[101];
-        scanf("%s%s", A, B);
+    while (t--)
+    {
+        char A[100];
+        scanf("%s", A);
+        int flag = 0;
 
-        int a_count = 0, b_count = 0, common = 0;
-        for (int i = 0; i < strlen(A); i++) {
-            if (A[i] == '1') {
-                a_count++;
+        // If any '0' or '5' is found in the string A - then set flag as 1 and exit the loop
+        for (int i = 0; i < strlen(A); i++)
+        {
+            if (A[i] == '0' || A[i] == '5')
+            {
+                flag = 1;
+                break;
             }
         }
 
-        for (int i = 0; i < strlen(B); i++) {
-            if (B[i] == '1') {
-                b_count++;
-            }
+        if (flag == 1)
+        {
+            printf("Yes\n");
         }
-
-        for (int i = 0; i < strlen(A); i++) {
-            if (A[i] == B[i]) {
-                common++;
-            }
+        else
+        {
+            printf("No\n");
         }
-
-        printf("%d %d %d\n", a_count, b_count, common);
     }
+
     return 0;
 }
