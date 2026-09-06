@@ -70,7 +70,7 @@ No letter is missing so there is no point in buying something. The answer is 0.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-04T17:55:26.075Z  
+**Submitted:** 2026-09-06T08:43:29.385Z  
 
 ```java
 import java.util.*;
