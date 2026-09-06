@@ -1,0 +1,47 @@
+# LJAAS49
+
+![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
+
+## Problem
+
+### Area of circle
+
+Write a program that takes the radius of a circle as input and prints its area. (use $\pi$ = 3.14)
+
+### Sample 1:
+Input
+Output
+
+```
+5
+```
+
+```
+78.5
+```
+
+## Solution
+
+**Language:** Java  
+**Runtime:** N/A  
+**Memory:** N/A  
+**Submitted:** 2026-09-06T16:40:41.279Z  
+
+```java
+import java.util.Scanner;
+class Codechef
+{
+	public static void main (String[] args) 
+	{
+	    Scanner sc=new Scanner(System.in);
+		int r=sc.nextInt();
+		System.out.println(3.14*r*r);
+
+	}
+}
+
+```
+
+---
+
+[View on CodeChef](https://www.codechef.com/problems/LJAAS49)
