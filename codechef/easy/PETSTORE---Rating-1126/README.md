@@ -1,0 +1,121 @@
+# PETSTORE - Rating 1126
+
+![Difficulty](https://img.shields.io/badge/Difficulty-Easy-green)
+
+## Problem
+
+### Pet Store
+
+Alice and Bob went to a pet store. There are $N$ animals in the store where the $i^{th}$ animal is of type $A_i$.
+
+Alice decides to buy some of these $N$ animals. Bob decides that he will buy  **all**  the animals  **left**  in the store after Alice has made the purchase.
+
+Find out whether it is possible that Alice and Bob end up with  **exactly same**  multiset of animals.
+
+### Input Format
+- The first line of input will contain a single integer $T$, denoting the number of test cases.
+- Each test case consists of multiple lines of input. The first line of each test case contains an integer $N$ — the number of animals in the store. The next line contains $N$ space separated integers, denoting the type of each animal.
+### Output Format
+
+For each test case, output on a new line, `YES`, if it is possible that Alice and Bob end up with  **exactly same**  multiset of animals and `NO` otherwise.
+
+You may print each character in uppercase or lowercase. For example, the strings `YES`, `yes`, `Yes`, and `yES` are considered identical.
+
+### Constraints
+- $1 \leq T \leq 1000$
+- $1 \leq N \leq 10^5$
+- $1 \leq A_i \leq 100$
+- The sum of $N$ over all test cases won't exceed $2\cdot 10^5$.
+### Sample 1:
+Input
+Output
+
+```
+4
+3
+4 4 4
+4
+2 3 3 2
+4
+1 2 2 3
+6
+5 5 1 5 1 5
+
+```
+
+```
+NO
+YES
+NO
+YES
+
+```
+
+### Explanation:
+
+ **Test case $1$:**  There are $4$ possible cases:
+
+- Alice does not buy anything: Bob will buy all the animals and will have $3$ animals of type $4$.
+- Alice buys $1$ animal of type $4$: Bob will buy the remaining two animals of type $4$.
+- Alice buys $2$ animals of type $4$: Bob will buy the remaining one animal of type $4$.
+- Alice buys all $3$ animals of type $4$: Bob will not buy anything.
+
+In no case, both Alice and Bob can have the exactly same multiset of pets.
+
+ **Test case $2$:**  If Alice buys animals $1$ and $2$, having types $2$ and $3$ respectively, Bob will buy animals $3$ and $4$, having types $3$ and $2$ respectively. Thus, both Alice and Bob have $1$ animal of type $2$ and $1$ animal of type $3$.
+
+ **Test case $3$:**  It can be proven that Alice and Bob cannot have the same multiset of pets in any case.
+
+ **Test case $4$:**  If Alice buys animals $1, 2,$ and $5$, having types $5, 5,$ and $1$ respectively, Bob will buy animals $3, 4,$ and $6$, having types $1, 5,$ and $5$ respectively. Thus, both Alice and Bob have $1$ animal of type $1$ and $2$ animals of type $5$.
+
+## Solution
+
+**Language:** Java  
+**Runtime:** N/A  
+**Memory:** N/A  
+**Submitted:** 2026-09-06T08:42:54.356Z  
+
+```java
+import java.util.*;
+
+class Codechef {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int T = sc.nextInt();
+
+        while (T-- > 0) {
+
+            int N = sc.nextInt();
+
+            int[] freq = new int[101];
+
+            for (int i = 0; i < N; i++) {
+                int x = sc.nextInt();
+                freq[x]++;
+            }
+
+            boolean possible = true;
+
+            for (int i = 1; i <= 100; i++) {
+                if (freq[i] % 2 != 0) {
+                    possible = false;
+                    break;
+                }
+            }
+
+            if (possible) {
+                System.out.println("YES");
+            } else {
+                System.out.println("NO");
+            }
+        }
+    }
+}
+```
+
+---
+
+[View on CodeChef](https://www.codechef.com/problems/PETSTORE)
