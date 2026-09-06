@@ -73,7 +73,7 @@ In no case, both Alice and Bob can have the exactly same multiset of pets.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-06T08:42:54.356Z  
+**Submitted:** 2026-09-06T08:43:10.276Z  
 
 ```java
 import java.util.*;
