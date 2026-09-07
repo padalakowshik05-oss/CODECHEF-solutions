@@ -34,7 +34,7 @@ Explanation: There is no repeated character.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-07T16:38:08.030Z  
+**Submitted:** 2026-09-07T16:39:05.449Z  
 
 ```java
 class Solution {
