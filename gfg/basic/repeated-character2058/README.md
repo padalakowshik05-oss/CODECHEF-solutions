@@ -43,7 +43,7 @@ You don't need to read input or print anything. Your task is to complete the fun
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-07T17:02:20.509Z  
+**Submitted:** 2026-09-07T17:02:52.427Z  
 
 ```java
 import java.util.*;
