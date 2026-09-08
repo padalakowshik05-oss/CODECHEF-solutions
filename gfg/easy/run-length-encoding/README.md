@@ -34,7 +34,7 @@ Output: g1
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-05T13:24:20.287Z  
+**Submitted:** 2026-09-08T16:21:29.674Z  
 
 ```java
 class Solution {
