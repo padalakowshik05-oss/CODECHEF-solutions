@@ -30,7 +30,7 @@ Explanation: Every word has the frequency of "1", so we return "this 1" as this 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-08T16:07:57.177Z  
+**Submitted:** 2026-09-08T16:08:24.463Z  
 
 ```java
 class Solution {
