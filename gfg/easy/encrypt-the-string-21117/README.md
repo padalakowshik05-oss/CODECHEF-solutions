@@ -56,7 +56,7 @@ You don't need to read input or print anything. Your task is to complete the fun
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-05T13:29:32.327Z  
+**Submitted:** 2026-09-08T16:33:23.699Z  
 
 ```java
 class Solution {
