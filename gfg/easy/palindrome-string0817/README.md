@@ -25,7 +25,7 @@ Explanation: "abc" does not read the same forwards and backwards, so it is not a
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-04T17:46:44.104Z  
+**Submitted:** 2026-09-08T16:14:58.336Z  
 
 ```java
 class Solution {
