@@ -28,7 +28,7 @@ Explanation: It has only 1 distinct vowel "o".
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-12T14:31:30.280Z  
+**Submitted:** 2026-09-12T14:32:45.130Z  
 
 ```java
 class Solution {
