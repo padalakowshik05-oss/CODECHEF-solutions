@@ -21,15 +21,12 @@ Output: false
 Explanation: The character 'A' appears again after a different character.
 ```
 
- **Constraints:** 
-1 ≤ |s| ≤ 105
-
 ## Solution
 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-07T16:43:29.773Z  
+**Submitted:** 2026-09-13T16:13:11.276Z  
 
 ```java
 class Solution {
