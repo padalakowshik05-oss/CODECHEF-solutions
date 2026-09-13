@@ -26,7 +26,7 @@ Explanation: The character 'A' appears again after a different character.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-13T16:13:11.276Z  
+**Submitted:** 2026-09-13T16:14:51.480Z  
 
 ```java
 class Solution {
