@@ -21,15 +21,12 @@ Output: -1
 Explanation: No character repeats so we return -1.
 ```
 
- **Constraints:** 
-1 ≤ |s| ≤ 105
-
 ## Solution
 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-07T17:05:51.669Z  
+**Submitted:** 2026-09-13T08:34:14.128Z  
 
 ```java
 class Solution {
