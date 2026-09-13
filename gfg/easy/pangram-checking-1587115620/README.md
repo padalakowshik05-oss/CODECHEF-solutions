@@ -30,7 +30,7 @@ The string may contain any ASCII character.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-03T15:48:56.683Z  
+**Submitted:** 2026-09-13T08:09:57.266Z  
 
 ```java
 class Solution {
