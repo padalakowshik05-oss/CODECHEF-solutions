@@ -4,14 +4,43 @@
 
 ## Problem
 
-_Description not available._
+### Sum of Diagonals
+
+Given a `N x N` square matrix, find the sum of both primary as well as secondary diagonal elements.
+
+For eg. in the following matrix:
+
+Sum of primary and secondary diagonal element = 3 + 2 + 0 + 4 + 5 = 14
+
+### Input Format
+- The first line of input will contain a single integer $N$, denoting the no. of rows and columns in input matrix
+- Next $N$ lines contain $N$ space separated integers, the elements of the matrix.
+### Output Format
+- Output on a single line, the sum of diagonals elements.
+### Constraints
+- $1 \leq N \leq 100$
+- The elements of the matrix are non-negative and won't exceed $1000$.
+### Sample 1:
+Input
+Output
+
+```
+3
+3 1 5
+8 2 1
+4 6 0
+```
+
+```
+14
+```
 
 ## Solution
 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-14T14:21:27.992Z  
+**Submitted:** 2026-09-14T14:24:14.440Z  
 
 ```java
 import java.util.*;
@@ -22,21 +51,27 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		Scanner sc=new Scanner(System.in);
-		int n=sc.nextInt();
-		int m=sc.nextInt();
-		int[][] a=new int[n][m];
-		for(int i=0;i<n;i++){
-		    for(int j=0;j<m;j++){
-		        a[i][j]=sc.nextInt();
-		    }
-		}
-		for(int i=n-1;i>=0;i--){
-		    for(int j=0;j<m;j++){
-		        System.out.print(a[i][j]+" ");
-		    }
-		    System.out.println();
-		}
+	    Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+
+        int[][] a = new int[n][n];
+
+        int sum = 0;
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+
+                a[i][j] = sc.nextInt();
+
+                if (i == j || i + j == n - 1) {
+                    sum += a[i][j];
+                }
+            }
+        }
+
+        System.out.println(sum);
+
 	}
 }
 
