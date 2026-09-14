@@ -25,8 +25,6 @@ class Solution {
                 hasWord = false;
             }
         }
-
-        // Last sentence without punctuation
         if (hasWord) {
             sentences++;
         }
