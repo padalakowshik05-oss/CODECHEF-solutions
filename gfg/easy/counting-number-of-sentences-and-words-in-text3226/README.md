@@ -34,7 +34,7 @@ The words are: "many", "Sentences", "are". Hence, the answer is [2, 3].
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-03T15:55:16.966Z  
+**Submitted:** 2026-09-14T14:00:15.871Z  
 
 ```java
 class Solution {
@@ -64,8 +64,6 @@ class Solution {
                 hasWord = false;
             }
         }
-
-        // Last sentence without punctuation
         if (hasWord) {
             sentences++;
         }
