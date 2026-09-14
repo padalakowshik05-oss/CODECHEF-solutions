@@ -4,16 +4,18 @@
 
 ## Problem
 
-_Description not available._
+### Matrix Types
+
+Which matrix is obtained by interchanging its rows and columns?
 
 ## Solution
 
-**Language:** Java  
+**Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-14T14:06:05.875Z  
+**Submitted:** 2026-09-14T14:06:17.780Z  
 
-```java
+```cpp
 import java.util.*;
 import java.lang.*;
 import java.io.*;
