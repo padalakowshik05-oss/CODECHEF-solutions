@@ -4,38 +4,61 @@
 
 ## Problem
 
-### Count Negative Numbers
+### Brute Force- Multiplication of Two Matrices
 
-Given a `N x M` matrix which is sorted in non-increasing order both row-wise and column-wise, count the number of negative numbers in matrix.
+Matrix multiplication involves combining the rows of the first matrix with the columns of the second matrix to produce a new matrix. Specifically, let's say we have two matrices A and B, where A has dimensions  **M x N**  (M rows, N columns), and B has dimensions  **N x P**  (N rows, P columns). The resulting matrix C from the multiplication, denoted as C = A * B, will have dimensions  **M x P**.
 
-For eg, in the following matrix:
+To compute the element at position C[i][j] in the resulting matrix C, we take the dot product of the $i^{\text{th}}$ row of matrix A and the $j^{\text{th}}$ column of matrix B.
 
-There are total `6` negative numbers.
+Mathematically, if A is represented as:
 
- *Note:*  It's easy to solve this problem in  **O(N*M)**  time, can you do it in  **O(N + M)** ?
+A = [[a11, a12,..., a1n], [a21, a22,..., a2n],..., [am1, am2,..., amn]]
+
+and B is represented as:
+
+B = [[b11, b12,..., b1p], [b21, b22,..., b2p],..., [bn1, bn2,..., bnp]]
+
+then the resulting matrix C is calculated as:
+
+C = [[c11, c12,..., c1p], [c21, c22,..., c2p],..., [cm1, cm2,..., cmp]]
+
+where each element cij in matrix C is computed as:
+
+cij = a[i][1] *b[1][j] + a[i][2]* b[2][j] +... + a[i][n]*b[n][j]
+
+In other words, each element cij in the resulting matrix C is obtained by multiplying the corresponding elements of the ith row of matrix A with the corresponding elements of the jth column of matrix B and summing up the products.
+
+For eg, see the multiplication of following two matrices:
 
 ### Input Format
-- The first line of input contains two space separated integers $N$ and $M$, denoting the no. of rows and columns in input matrix
-- Next $N$ lines contains $M$ space separated integers, the elements of the matrix.
+- The first line of input will contain two space separated integers $M$ and $N$, denoting the number of rows and columns of the first matrix.
+- Next $M$ lines contains $N$ space separated integers, the elements of first matrix.
+- Next line contain two space separated integers $N$ and $P$, denoting the number of rows and columns of the second matrix.
+- Next $N$ lines contains $P$ space separated integers, the elements of second matrix.
 ### Output Format
-- Output on a single line, the count of negative integers in the given matrix.
+
+Output $M$ lines, each containing $P$ space separated integers, the elements of multiplication matrix of first and second input matrices.
+
 ### Constraints
-- $1 \leq N, M \leq 100$
-- The absolute value of the matrix's elements doesn't exceed $100000$.
+- $1 \leq N, M, P \leq 100$
+- The elements of both the matrices are non-negative and won't exceed $1000$.
 ### Sample 1:
 Input
 Output
 
 ```
+2 3
+2 3 4
+4 5 6
+3 2
+1 2
 3 4
-8 7 6 -1
-7 7 -1 -2
-4 -5 -6 -7
-
+2 2
 ```
 
 ```
-6
+19 24 
+31 40 
 ```
 
 ## Solution
@@ -43,35 +66,57 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-14T14:26:54.650Z  
+**Submitted:** 2026-09-14T14:29:27.740Z  
 
 ```java
 import java.util.*;
-import java.lang.*;
-import java.io.*;
 
-class Codechef
-{
-	public static void main (String[] args) throws java.lang.Exception
-	{
-		Scanner sc=new Scanner(System.in);
-		int n=sc.nextInt();
-		int m=sc.nextInt();
-		int[][] a=new int[n][m];
-		int count=0;
-		for(int i=0;i<n;i++){
-		    for(int j=0;j<m;j++){
-		        a[i][j]=sc.nextInt();
-		        if(a[i][j]<0){
-		            count++;
-		        }
-		    }
-		}
-		System.out.println(count);
+class Codechef {
+    public static void main(String[] args) {
 
-	}
+        Scanner sc = new Scanner(System.in);
+
+        int m = sc.nextInt();
+        int n = sc.nextInt();
+
+        int[][] a = new int[m][n];
+
+        // Matrix A
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                a[i][j] = sc.nextInt();
+            }
+        }
+
+        int n2 = sc.nextInt();
+        int p = sc.nextInt();
+
+        int[][] b = new int[n2][p];
+
+        // Matrix B
+        for (int i = 0; i < n2; i++) {
+            for (int j = 0; j < p; j++) {
+                b[i][j] = sc.nextInt();
+            }
+        }
+
+        // Matrix multiplication
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < p; j++) {
+
+                int sum = 0;
+
+                for (int k = 0; k < n; k++) {
+                    sum += a[i][k] * b[k][j];
+                }
+
+                System.out.print(sum + " ");
+            }
+
+            System.out.println();
+        }
+    }
 }
-
 ```
 
 ---
