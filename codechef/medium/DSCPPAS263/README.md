@@ -57,7 +57,7 @@ No such matrix is possible.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-14T14:33:02.020Z  
+**Submitted:** 2026-09-14T14:34:05.607Z  
 
 ```java
 import java.util.Scanner;
@@ -82,6 +82,9 @@ public class Main {
                 }
                 System.out.println();
             }
+        }
+        else{
+            System.out.println(-1);
         }
     }
 }
