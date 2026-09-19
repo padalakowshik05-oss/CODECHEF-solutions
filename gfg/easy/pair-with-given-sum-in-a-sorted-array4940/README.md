@@ -39,7 +39,7 @@ Explanation: There is no such pair which sums up to 125.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-19T15:43:52.419Z  
+**Submitted:** 2026-09-19T15:53:22.912Z  
 
 ```java
 class Solution {
