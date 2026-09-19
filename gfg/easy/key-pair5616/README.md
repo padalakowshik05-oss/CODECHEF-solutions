@@ -32,7 +32,7 @@ Explanation: No pair is possible as only one element is present in arr[]
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-10T17:32:17.835Z  
+**Submitted:** 2026-09-19T14:53:30.066Z  
 
 ```java
 class Solution {
