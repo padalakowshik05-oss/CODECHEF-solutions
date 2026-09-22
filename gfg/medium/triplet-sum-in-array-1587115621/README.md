@@ -34,7 +34,7 @@ Explanation: No triplet in the array sums to 24.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-22T17:38:30.780Z  
+**Submitted:** 2026-09-22T18:12:18.174Z  
 
 ```java
 class Solution {
