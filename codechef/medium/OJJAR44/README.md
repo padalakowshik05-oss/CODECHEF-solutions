@@ -4,29 +4,23 @@
 
 ## Problem
 
-### Positive Numbers
-
-In this problem, we will filter out negative numbers from an array of integers using the `filter()` method.
-
-You are given an array of numbers, and you want to keep only the positive numbers (including zero). We'll use the `filter()` method for this.
-
-- Use the filter() method: We will define a callback function that checks if each number is greater than or equal to zero. let positiveNumbers = numbers.filter((number) => { // Your code here });
-- Result: After filtering, the positiveNumbers array will contain only those numbers that meet the condition. Print the positiveNumbers array to see the output.
+_Description not available._
 
 ## Solution
 
 **Language:** JavaScript  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-23T06:11:23.176Z  
+**Submitted:** 2026-09-23T06:10:15.867Z  
 
 ```js
-let numbers = [10, -5, 0, 3, -2, 7, -1, 4];
-
-let positiveNumbers=numbers.filter((number) => {
-    return number>=0;
+let words = ["apple", "banana", "pear", "kiwi", "grape", "orange"];
+let shortWords=words.filter((word) => {
+    return word.length<=4;
 });
-console.log(positiveNumbers);
+console.log(shortWords);
+
+// complete the code 
 ```
 
 ---
