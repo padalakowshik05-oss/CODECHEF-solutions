@@ -7,18 +7,17 @@ public class Main {
         Arrays.sort(arr2);
         int i=0;
         int j=0;
-        int largest=-1;
+        int largest=0;
         while(i<arr1.length && j<arr2.length){
-            if(arr1[i]==arr2[j]){
-                largest=arr1[i];
+            if(arr1[i]<arr2[j]){
                 i++;
+            }
+            else if(arr1[i]>arr2[j]){
                 j++;
             }
-            else if(arr1[i]<arr2[j]){
-                i++;
-            }
             else{
-                
+                largest=arr1[i];
+                i++;
                 j++;
             }
         }
