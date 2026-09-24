@@ -73,7 +73,7 @@ The third one has no elements with value  **7**  after elements with value  **6*
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-24T15:38:17.798Z  
+**Submitted:** 2026-09-24T15:40:53.326Z  
 
 ```java
 import java.util.*;
