@@ -70,7 +70,7 @@ The common elements are 2,9. The largest one is 9.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-24T15:55:18.211Z  
+**Submitted:** 2026-09-24T15:56:12.835Z  
 
 ```java
 import java.util.Arrays;
