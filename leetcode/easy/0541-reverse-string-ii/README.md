@@ -38,8 +38,8 @@ Output: "bacd"
 
 **Language:** Java  
 **Runtime:** 1 ms (beats 96.05%)  
-**Memory:** 44.8 MB (beats 44.18%)  
-**Submitted:** 2026-09-24T15:18:18.190Z  
+**Memory:** 44.9 MB (beats 27.03%)  
+**Submitted:** 2026-09-24T15:18:31.783Z  
 
 ```java
 class Solution {
