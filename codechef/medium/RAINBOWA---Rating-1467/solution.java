@@ -5,6 +5,7 @@ class Codechef {
     static String isRainbow(int a[], int n) {
         int i = 0;
         int j = n - 1;
+        int prev = 0;
 
         while (i <= j) {
 
@@ -16,19 +17,21 @@ class Codechef {
                 return "no";
             }
 
-            if (i > 0 && a[i] < a[i - 1]) {
+            if (a[i] < prev) {
                 return "no";
             }
 
-            if (i > 0 && a[i] > a[i - 1] + 1) {
+            if (a[i] > prev + 1) {
                 return "no";
             }
+
+            prev = a[i];
 
             i++;
             j--;
         }
 
-        if (a[(n - 1) / 2] != 7) {
+        if (prev != 7) {
             return "no";
         }
 
@@ -42,7 +45,6 @@ class Codechef {
 
         while (t-- > 0) {
             int n = sc.nextInt();
-
             int[] a = new int[n];
 
             for (int i = 0; i < n; i++) {
