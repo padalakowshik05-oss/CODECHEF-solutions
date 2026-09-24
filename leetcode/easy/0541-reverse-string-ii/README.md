@@ -37,30 +37,30 @@ Output: "bacd"
 ## Solution
 
 **Language:** Java  
-**Runtime:** 1 ms (beats 95.94%)  
-**Memory:** 44.5 MB (beats 89.03%)  
-**Submitted:** 2026-09-04T17:41:07.138Z  
+**Runtime:** 1 ms (beats 96.05%)  
+**Memory:** 44.8 MB (beats 44.18%)  
+**Submitted:** 2026-09-24T15:18:18.190Z  
 
 ```java
 class Solution {
     public String reverseStr(String s, int k) {
-        char[] arr = s.toCharArray();
+        char[] a = s.toCharArray();
 
-        for (int start = 0; start < arr.length; start += 2 * k) {
-            int i = start;
-            int j = Math.min(start + k - 1, arr.length - 1);
+        for (int i = 0; i < a.length; i += 2 * k) {
+            int left = i;
+            int right = Math.min(i + k - 1, a.length - 1);
 
-            while (i < j) {
-                char temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
+            while (left < right) {
+                char temp = a[left];
+                a[left] = a[right];
+                a[right] = temp;
 
-                i++;
-                j--;
+                left++;
+                right--;
             }
         }
 
-        return new String(arr);
+        return new String(a);
     }
 }
 ```
