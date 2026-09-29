@@ -5,7 +5,7 @@ class Solution {
         int h=n-1;
         while(l<=h){
             int m1=l+(h-l)/3;
-            int m2=h-(h-l)/2;
+            int m2=h-(h-l)/3;
             if(arr[m1]==x || arr[m2]==x){
                 return true;
             }
