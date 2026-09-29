@@ -33,7 +33,7 @@ Explanation: The element 2 is not present in the array, so the output is false.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-29T17:12:03.508Z  
+**Submitted:** 2026-09-29T17:12:10.404Z  
 
 ```java
 class Solution {
@@ -43,7 +43,7 @@ class Solution {
         int h=n-1;
         while(l<=h){
             int m1=l+(h-l)/3;
-            int m2=h-(h-l)/2;
+            int m2=h-(h-l)/3;
             if(arr[m1]==x || arr[m2]==x){
                 return true;
             }
