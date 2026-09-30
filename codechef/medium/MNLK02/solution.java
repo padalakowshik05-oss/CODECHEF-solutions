@@ -11,7 +11,7 @@ class Codechef
 		String t=sc.next();
 		int n=s.length();
 		int m=t.length();
-		int count=0;
+		
 		if(n!=m){
 		    System.out.println(false);
 		    System.exit(0);
