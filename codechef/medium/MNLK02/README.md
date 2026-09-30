@@ -49,7 +49,7 @@ false
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T09:29:23.326Z  
+**Submitted:** 2026-09-30T09:30:59.548Z  
 
 ```java
 import java.util.*;
@@ -68,6 +68,7 @@ class Codechef
 		int count=0;
 		if(n!=m){
 		    System.out.println("false");
+		    System.exit(0);
 		}
 		int[] a=new int[26];
 		for(int i=0;i<n;i++){
