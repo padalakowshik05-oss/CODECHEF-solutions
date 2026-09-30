@@ -49,7 +49,7 @@ false
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T09:32:04.075Z  
+**Submitted:** 2026-09-30T09:32:43.532Z  
 
 ```java
 import java.util.*;
@@ -65,7 +65,7 @@ class Codechef
 		String t=sc.next();
 		int n=s.length();
 		int m=t.length();
-		int count=0;
+		
 		if(n!=m){
 		    System.out.println(false);
 		    System.exit(0);
