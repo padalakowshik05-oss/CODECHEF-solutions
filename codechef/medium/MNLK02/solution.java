@@ -15,23 +15,18 @@ class Codechef
 		if(n!=m){
 		    System.out.println("false");
 		}
-		HashSet<Character> set=new HashSet<>();
+		int[] a=new int[26];
 		for(int i=0;i<n;i++){
-		    set.add(Character.toLowerCase(s.charAt(i)));
+		    a[s.charAt(i)-'a']++;
+		    a[t.charAt(i)-'a']--;
 		}
 		for(int i=0;i<n;i++){
-		   if(set.contains(Character.toLowerCase(t.charAt(i)))){
-		       count++;
-		   }
-		   
+		    if(a[i]!=0){
+		        System.out.println("false");
+		        System.exit(0);
+		    }
 		}
-		if(count==n){
-		   System.out.println("true"); 
-		}
-		else{
-		   System.out.println("false"); 
-		}
-		
+		System.out.println("true");
 		
 		
 
