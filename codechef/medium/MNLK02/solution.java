@@ -7,13 +7,13 @@ class Codechef
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		Scanner sc=new Scanner(System.in);
-		String s=sc.nextLine();
-		String t=sc.nextLine();
+		String s=sc.next();
+		String t=sc.next();
 		int n=s.length();
 		int m=t.length();
 		int count=0;
 		if(n!=m){
-		    System.out.println("false");
+		    System.out.println(false);
 		    System.exit(0);
 		}
 		int[] a=new int[26];
@@ -23,11 +23,11 @@ class Codechef
 		}
 		for(int i=0;i<n;i++){
 		    if(a[i]!=0){
-		        System.out.println("false");
+		        System.out.println(false);
 		        System.exit(0);
 		    }
 		}
-		System.out.println("true");
+		System.out.println(true);
 		
 		
 
