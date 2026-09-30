@@ -18,7 +18,7 @@ class Codechef
 		    a[s.charAt(i)-'a']++;
 		    a[t.charAt(i)-'a']--;
 		}
-		for(int i=0;i<26;i++){
+		for(int i=0;i<s.length();i++){
 		    if(a[i]!=0){
 		        System.out.println(false);
 		        System.exit(0);
