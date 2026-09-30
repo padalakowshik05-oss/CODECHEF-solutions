@@ -49,7 +49,7 @@ false
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T09:23:05.542Z  
+**Submitted:** 2026-09-30T09:25:44.555Z  
 
 ```java
 import java.util.*;
@@ -71,10 +71,10 @@ class Codechef
 		}
 		HashSet<Character> set=new HashSet<>();
 		for(int i=0;i<n;i++){
-		    set.add(s.charAt(i));
+		    set.add(Character.toLowerCase(s.charAt(i)));
 		}
 		for(int i=0;i<n;i++){
-		   if(set.contains(t.charAt(i))){
+		   if(set.contains(Character.toLowerCase(t.charAt(i)))){
 		       count++;
 		   }
 		   
