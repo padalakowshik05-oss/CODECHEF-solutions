@@ -17,10 +17,10 @@ class Codechef
 		}
 		HashSet<Character> set=new HashSet<>();
 		for(int i=0;i<n;i++){
-		    set.add(s.charAt(i));
+		    set.add(Character.toLowerCase(s.charAt(i)));
 		}
 		for(int i=0;i<n;i++){
-		   if(set.contains(t.charAt(i))){
+		   if(set.contains(Character.toLowerCase(t.charAt(i)))){
 		       count++;
 		   }
 		   
