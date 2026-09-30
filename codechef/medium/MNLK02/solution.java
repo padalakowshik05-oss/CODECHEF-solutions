@@ -14,6 +14,7 @@ class Codechef
 		int count=0;
 		if(n!=m){
 		    System.out.println("false");
+		    System.exit(0);
 		}
 		int[] a=new int[26];
 		for(int i=0;i<n;i++){
