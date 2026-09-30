@@ -49,7 +49,7 @@ false
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T09:38:04.121Z  
+**Submitted:** 2026-09-30T09:35:44.030Z  
 
 ```java
 import java.util.*;
@@ -72,7 +72,7 @@ class Codechef
 		    a[s.charAt(i)-'a']++;
 		    a[t.charAt(i)-'a']--;
 		}
-		for(int i=0;i<26;i++){
+		for(int i=0;i<s.length();i++){
 		    if(a[i]!=0){
 		        System.out.println(false);
 		        System.exit(0);
