@@ -63,19 +63,25 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-02T11:24:01.411Z  
+**Submitted:** 2026-10-02T11:26:48.869Z  
 
 ```java
 class Solution {
     public int findMin(int[] nums) {
-        int n=nums.length;
-        int min=-1;
-        for(int i=0;i<n;i++){
-            if(nums[i]<min){
-                min=nums[i];
+        int l = 0;
+        int h = nums.length - 1;
+
+        while (l < h) {
+            int m = l + (h - l) / 2;
+
+            if (nums[m] > nums[h]) {
+                l = m + 1;
+            } else {
+                h = m;
             }
         }
-        return min;
+
+        return nums[l];
         
     }
 }
