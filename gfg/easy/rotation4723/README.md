@@ -32,7 +32,7 @@ Explanation: The original array is [2, 4, 6, 9] and we get the above array after
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-02T11:33:16.590Z  
+**Submitted:** 2026-10-02T11:34:01.509Z  
 
 ```java
 class Solution {
