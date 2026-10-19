@@ -1,0 +1,32 @@
+
+          </div>
+        )}
+
+          <div className="review-section">
+            <h4>Experience & Skills</h4>
+            <p><strong>Job Title:</strong>[Data Will Go Here]</p>
+            <p><strong>Company:</strong>[Data Will Go Here]</p>
+            <p><strong>Years of Experience:</strong>[Data Will Go Here]</p>
+            <p><strong>Skills:</strong>[Data Will Go Here]</p>
+          </div>
+
+          <div className="form-section terms-section">
+            <h4>Confirmation *</h4>
+            <label htmlFor="agreeTerms">
+              <input type="checkbox" id="agreeTerms" name="agreeTerms" /> I confirm that the infomration provided is accurate and I agree to the company's terms and conditions.
+            </label>
+
+          </div>
+      </div>
+
+      <div className="tab-navigation">
+        <button onClick={onPrevious} disabled={isFirstTab}>
+          Previous
+        </button>
+        <button onClick={onNext} disabled={isLastTab}>
+          Next
+        </button>
+      </div>
+    </div>
+  );
+}
