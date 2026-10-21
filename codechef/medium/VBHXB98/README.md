@@ -68,7 +68,7 @@ This structure supports both browser-based and API-based feedback collection —
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-21T13:51:13.416Z  
+**Submitted:** 2026-10-21T13:52:03.079Z  
 
 ```cpp
 app.use(express.urlencoded({ extended: false }));
@@ -82,24 +82,28 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Handle HTML form submission
 app.post('/submit-feedback-form', (req, res) => {
   console.log('Form data received:');
-    console.log(req.body);
-      res.send('Feedback form data received!');
-      });
+  console.log(req.body);
+  res.send('Feedback form data received!');
+});
 
-      // Handle JSON submission
-      app.post('/submit-feedback-json', (req, res) => {
-        console.log('JSON data received:');
-          console.log(req.body);
-            res.json({
-                message: 'Feedback JSON data received!'
-                  });
-                  });
+// Handle JSON submission
+app.post('/submit-feedback-json', (req, res) => {
+  console.log('JSON data received:');
+  console.log(req.body);
+  res.json({
+    message: 'Feedback JSON data received!'
+  });
+});
 
-                  // Start the server
-                  app.listen(port, () => {
-                    console.log(`Server running at http://localhost:${port}`);
-                    });
+// Start the server
+app.listen(port, () => {
+// Middleware to parse URL-encoded form data
 
+const port = 3000;
+const app = express();
+
+const path = require('path');
+const express = require('express');
 ```
 
 ---
