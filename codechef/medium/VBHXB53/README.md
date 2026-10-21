@@ -25,7 +25,7 @@ Write the code to import the fs module.
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-21T08:57:20.349Z  
+**Submitted:** 2026-10-21T13:27:45.824Z  
 
 ```cpp
 const fs = require('fs');
