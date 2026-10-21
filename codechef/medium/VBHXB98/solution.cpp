@@ -24,10 +24,5 @@ app.post('/submit-feedback-json', (req, res) => {
 
 // Start the server
 app.listen(port, () => {
-// Middleware to parse URL-encoded form data
-
-const port = 3000;
-const app = express();
-
-const path = require('path');
-const express = require('express');
+  console.log(`Server running at http://localhost:${p}`);
+});
