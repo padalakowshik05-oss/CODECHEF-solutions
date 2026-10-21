@@ -1,0 +1,18 @@
+    <div className="game-container">
+      <h1>2048 Game</h1>
+      <div className="board">
+        {board.map((row, rIndex) => (
+          <div key={rIndex} className="row">
+            {row.map((cell, cIndex) => (
+              <div key={cIndex} className={`tile tile-${cell}`}>
+                {cell !== 0 ? cell : ''}
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default App;
