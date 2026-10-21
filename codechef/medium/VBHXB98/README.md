@@ -68,7 +68,7 @@ This structure supports both browser-based and API-based feedback collection —
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-21T13:52:03.079Z  
+**Submitted:** 2026-10-21T13:52:52.984Z  
 
 ```cpp
 app.use(express.urlencoded({ extended: false }));
@@ -97,13 +97,9 @@ app.post('/submit-feedback-json', (req, res) => {
 
 // Start the server
 app.listen(port, () => {
-// Middleware to parse URL-encoded form data
+  console.log(`Server running at http://localhost:${p}`);
+});
 
-const port = 3000;
-const app = express();
-
-const path = require('path');
-const express = require('express');
 ```
 
 ---
