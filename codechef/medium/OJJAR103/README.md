@@ -19,7 +19,7 @@ You need to implement a background color changer that turns the page background 
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-19T12:19:50.449Z  
+**Submitted:** 2026-10-21T11:53:17.033Z  
 
 ```cpp
 import { useState, useEffect } from "react";
@@ -29,6 +29,12 @@ function BackgroundChanger() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
+    if(count >= 5){
+      document.body.style.backgroundColor = "lightblue";
+    } else {
+      document.body.style.backgroundColor = "";
+    }
+  }, [count]);
 
   return (
     <div className="container">
@@ -38,12 +44,6 @@ function BackgroundChanger() {
     </div>
   );
 }
-    if(count >= 5){
-  }, [count]);
-      document.body.style.backgroundColor = "lightblue";
-    } else {
-      document.body.style.backgroundColor = "";
-    }
 
 export default BackgroundChanger;
 ```
