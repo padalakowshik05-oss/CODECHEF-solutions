@@ -9,20 +9,20 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Handle HTML form submission
 app.post('/submit-feedback-form', (req, res) => {
   console.log('Form data received:');
-    console.log(req.body);
-      res.send('Feedback form data received!');
-      });
+  console.log(req.body);
+  res.send('Feedback form data received!');
+});
 
-      // Handle JSON submission
-      app.post('/submit-feedback-json', (req, res) => {
-        console.log('JSON data received:');
-          console.log(req.body);
-            res.json({
-                message: 'Feedback JSON data received!'
-                  });
-                  });
+// Handle JSON submission
+app.post('/submit-feedback-json', (req, res) => {
+  console.log('JSON data received:');
+  console.log(req.body);
+  res.json({
+    message: 'Feedback JSON data received!'
+  });
+});
 
-                  // Start the server
-                  app.listen(port, () => {
-                    console.log(`Server running at http://localhost:${port}`);
-                    });
+// Start the server
+app.listen(port, () => {
+  console.log(`Server running at http://localhost:${port}`);
+});
