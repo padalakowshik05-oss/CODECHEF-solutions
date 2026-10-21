@@ -5,6 +5,12 @@ function BackgroundChanger() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
+    if(count >= 5){
+      document.body.style.backgroundColor = "lightblue";
+    } else {
+      document.body.style.backgroundColor = "";
+    }
+  }, [count]);
 
   return (
     <div className="container">
@@ -14,11 +20,5 @@ function BackgroundChanger() {
     </div>
   );
 }
-    if(count >= 5){
-  }, [count]);
-      document.body.style.backgroundColor = "lightblue";
-    } else {
-      document.body.style.backgroundColor = "";
-    }
 
 export default BackgroundChanger;
