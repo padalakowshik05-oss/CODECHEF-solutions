@@ -28,6 +28,4 @@ app.listen(PORT, () => {
 // Middleware to parse URL-encoded form data
 
 const PORT = 3000;
-const app = express();
-const path = require('path');
-const express = require('express');
+});
