@@ -4,7 +4,7 @@
 
 ## Problem
 
-Given a string  **s,**  count the total  **distinct** vowels in the string. The string s contains  **lowercase** letters only.
+Given a string  **s,**  count the total distinct vowels in the string. 
 
  **Examples:** 
 
@@ -20,15 +20,12 @@ Output: 1
 Explanation: It has only 1 distinct vowel "o".
 ```
 
- **Constraints:** 
-1 ≤ |s| ≤ 104
-
 ## Solution
 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-12T14:32:45.130Z  
+**Submitted:** 2026-11-03T06:54:31.199Z  
 
 ```java
 class Solution {
