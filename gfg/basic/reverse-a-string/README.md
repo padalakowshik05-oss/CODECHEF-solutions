@@ -4,7 +4,7 @@
 
 ## Problem
 
-You are given a string  **`s`**, and your task is to reverse the string.
+Given a string  **s**, reverse the string.
 
  **Examples:** 
 
@@ -29,7 +29,7 @@ Output: "a"
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-10T17:33:06.723Z  
+**Submitted:** 2026-11-03T06:46:10.548Z  
 
 ```java
 class Solution {
@@ -43,7 +43,7 @@ class Solution {
         }
 
         return new String(arr);
-        
+
     }
 }
 ```
