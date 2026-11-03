@@ -37,7 +37,7 @@ You don't need to read or print anything. Your task is to complete the functionÂ
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-03T04:22:42.976Z  
+**Submitted:** 2026-11-03T04:50:06.875Z  
 
 ```java
 class Solution {
