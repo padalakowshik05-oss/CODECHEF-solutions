@@ -30,7 +30,7 @@ Explanation: The words are "geeks", "for", and "geeks", whose lengths are 5, 3, 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-12T14:27:44.602Z  
+**Submitted:** 2026-11-03T06:56:16.229Z  
 
 ```java
 class Solution {
