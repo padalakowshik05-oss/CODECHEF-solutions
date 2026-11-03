@@ -25,7 +25,7 @@ Explanation: No string in the array differs from "apple" by exactly one characte
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-12T14:16:14.460Z  
+**Submitted:** 2026-11-03T06:57:33.639Z  
 
 ```java
 class Solution {
