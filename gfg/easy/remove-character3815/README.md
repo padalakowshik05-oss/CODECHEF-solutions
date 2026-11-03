@@ -25,7 +25,7 @@ Explanation: After removing characters (c, a, r) from string1 we get "ouene".
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-13T08:19:34.661Z  
+**Submitted:** 2026-11-03T06:47:36.098Z  
 
 ```java
 class Solution {
