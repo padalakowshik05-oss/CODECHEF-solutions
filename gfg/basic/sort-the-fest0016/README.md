@@ -26,7 +26,7 @@ Explanation: There is no common word in the two arrays.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-12T14:12:15.812Z  
+**Submitted:** 2026-11-03T06:59:37.505Z  
 
 ```java
 class Solution {
