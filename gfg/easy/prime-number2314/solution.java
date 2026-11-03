@@ -1,6 +1,5 @@
 class Solution {
     static boolean isPrime(int n) {
-        // code here
          if(n<=1){
             return false;
         }
