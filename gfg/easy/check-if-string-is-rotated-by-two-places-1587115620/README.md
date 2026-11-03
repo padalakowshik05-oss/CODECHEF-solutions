@@ -35,7 +35,7 @@ Explanation: If we rotate "ab" by two place in any direction, we always get "ab"
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-13T08:01:56.847Z  
+**Submitted:** 2026-11-03T06:50:24.772Z  
 
 ```java
 class Solution {
