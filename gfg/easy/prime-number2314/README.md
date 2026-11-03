@@ -33,12 +33,11 @@ Explanation: 1 has only one divisor (1 itself), which is not sufficient for it t
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-03T04:46:41.303Z  
+**Submitted:** 2026-11-03T05:14:19.580Z  
 
 ```java
 class Solution {
     static boolean isPrime(int n) {
-        // code here
          if(n<=1){
             return false;
         }
