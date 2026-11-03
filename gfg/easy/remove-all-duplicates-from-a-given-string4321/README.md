@@ -27,7 +27,7 @@ Explanation: After removing duplicate characters such as e, a, we have string as
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-13T07:53:44.474Z  
+**Submitted:** 2026-11-03T06:53:22.235Z  
 
 ```java
 class Solution {
