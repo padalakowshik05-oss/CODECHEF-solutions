@@ -26,15 +26,12 @@ Input: s = g
 Output: g1
 ```
 
- **Constraints:** 
-1 ≤ s.size() ≤ 106
-
 ## Solution
 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-13T08:11:16.757Z  
+**Submitted:** 2026-11-03T06:48:59.858Z  
 
 ```java
 class Solution {
