@@ -35,7 +35,7 @@ Explanation: The first 2 Fibonacci numbers are 0 and 1.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-03T06:12:18.960Z  
+**Submitted:** 2026-11-26T13:49:09.359Z  
 
 ```java
 class Solution {
