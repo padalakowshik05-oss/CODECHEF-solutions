@@ -25,14 +25,14 @@ Explanation: The prime numbers less than or equal to 12 are 2, 3, 5, 7, and 11. 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-26T07:44:15.542Z  
+**Submitted:** 2026-11-26T07:44:45.038Z  
 
 ```java
 class Solution {
 
    
     static long primorial(int n) {
-        long ans = 1;
+        int ans = 1;
         for (int i = 2; i <= n; i++) {
             if (isPrime(i)) {
                 ans *= i;
