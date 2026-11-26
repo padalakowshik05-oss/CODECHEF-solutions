@@ -1,7 +1,7 @@
 class Solution {
     public static int largest(int[] arr) {
         int n=arr.length;
-        int max=-1;
+        int max=-1000000;
         for(int i=0;i<n;i++){
             if(arr[i]>max){
                 max=arr[i];
