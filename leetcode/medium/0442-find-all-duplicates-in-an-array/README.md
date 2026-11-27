@@ -10,6 +10,8 @@ You must write an algorithm that runs in `O(n)` time and uses only  *constant*  
 
  
 
+Original
+Java
  **Example 1:** 
 
 ```
@@ -46,9 +48,9 @@ Output: []
 ## Solution
 
 **Language:** Java  
-**Runtime:** 6 ms (beats 92.33%)  
-**Memory:** 57 MB (beats 97.29%)  
-**Submitted:** 2026-11-03T06:27:09.838Z  
+**Runtime:** 6 ms (beats 94.37%)  
+**Memory:** 57.3 MB (beats 75.53%)  
+**Submitted:** 2026-11-27T05:07:41.414Z  
 
 ```java
 import java.util.*;
